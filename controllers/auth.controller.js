@@ -8,12 +8,12 @@ function hashResetToken(token) {
 }
 
 async function sendResetEmail(user, token) {
-  const resetUrl = `${process.env.ADMIN_URL || "https://thaili-admin.vercel.app/"}/reset-password/${token}`;
+  const resetUrl = `${process.env.ADMIN_URL || "http://localhost:5174"}/reset-password/${token}`;
   await sendMail({
     to: user.email,
-    subject: "Reset your Thaili password",
+    subject: "Reset your SiwCarry password",
     text: `Reset your password using this link. It expires in 15 minutes: ${resetUrl}`,
-    html: `<p>Reset your Thaili password using the link below.</p><p><a href="${resetUrl}">Reset password</a></p><p>This link expires in 15 minutes.</p>`,
+    html: `<p>Reset your SiwCarry password using the link below.</p><p><a href="${resetUrl}">Reset password</a></p><p>This link expires in 15 minutes.</p>`,
   });
 }
 

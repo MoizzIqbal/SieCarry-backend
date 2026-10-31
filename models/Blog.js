@@ -7,7 +7,7 @@ const blogSchema = new mongoose.Schema(
     excerpt: { type: String, default: "", trim: true },
     content: { type: String, required: true },
     coverImage: { type: String, default: "" },
-    author: { type: String, default: "Thaili", trim: true },
+    author: { type: String, default: "SiwCarry", trim: true },
     tags: [{ type: String, trim: true }],
     isPublished: { type: Boolean, default: false },
     metaTitle: { type: String, default: "", trim: true },

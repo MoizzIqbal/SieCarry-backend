@@ -9,7 +9,7 @@ function ensureConfigured() {
 }
 
 function folderPath(subfolder = "products") {
-  const root = process.env.CLOUDINARY_FOLDER || "thaili";
+  const root = process.env.CLOUDINARY_FOLDER || "siwcarry";
   return `${root}/${subfolder}`;
 }
 

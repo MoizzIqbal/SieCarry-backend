@@ -32,7 +32,7 @@ app.use(express.json({ limit: '15mb' }))
 app.use(morgan('dev'))
 
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', brand: 'Thaili', time: new Date().toISOString() })
+  res.json({ status: 'ok', brand: 'SiwCarry', time: new Date().toISOString() })
 })
 
 app.use('/api/auth', authRoutes)
@@ -52,7 +52,7 @@ async function start() {
   try {
     await connectDB(process.env.MONGODB_URI)
     app.listen(PORT, () => {
-      console.log(`Thaili API running on http://localhost:${PORT}`)
+      console.log(`SiwCarry API running on http://localhost:${PORT}`)
     })
   } catch (error) {
     console.error('Failed to start server:', error.message)

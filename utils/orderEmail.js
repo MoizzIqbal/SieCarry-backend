@@ -47,7 +47,7 @@ export async function sendNewOrderEmail(order) {
   const subject = `New order ${order.orderNumber} — ${customerName || "Customer"}`;
 
   const text = `
-New order received on Thaili
+New order received on SiwCarry
 
 Order #: ${order.orderNumber}
 Status: ${order.status}

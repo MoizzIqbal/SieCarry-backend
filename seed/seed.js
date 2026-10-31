@@ -20,8 +20,8 @@ async function seed() {
 
     await User.create({
       name: process.env.ADMIN_NAME || 'Admin',
-      email: process.env.ADMIN_EMAIL || 'admin@thaili.com',
-      password: process.env.ADMIN_PASSWORD || 'admin123',
+      email: process.env.ADMIN_EMAIL || 'admin@siwcarry.com',
+      password: process.env.ADMIN_PASSWORD || 'SiwCarry@123',
       role: 'admin',
     })
 
@@ -41,8 +41,8 @@ async function seed() {
     await Product.insertMany(productsWithSlugs)
 
     console.log('Seed completed successfully')
-    console.log(`Admin login: ${process.env.ADMIN_EMAIL || 'admin@thaili.com'}`)
-    console.log(`Password: ${process.env.ADMIN_PASSWORD || 'admin123'}`)
+    console.log(`Admin login: ${process.env.ADMIN_EMAIL || 'admin@siwcarry.com'}`)
+    console.log(`Password: ${process.env.ADMIN_PASSWORD || 'SiwCarry@123'}`)
     process.exit(0)
   } catch (error) {
     console.error('Seed failed:', error)

@@ -1,7 +1,7 @@
 {
-  "name": "thaili-server",
+  "name": "siwcarry-server",
   "version": "1.0.0",
-  "description": "Thaili e-commerce API",
+  "description": "SiwCarry e-commerce API",
   "type": "module",
   "main": "index.js",
   "scripts": {

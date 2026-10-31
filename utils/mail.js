@@ -15,12 +15,12 @@ function parseFrom(from = "") {
   const match = String(from).match(/^(.*)<([^>]+)>$/);
   if (match) {
     return {
-      name: match[1].trim().replace(/^"|"$/g, "") || "Thaili",
+      name: match[1].trim().replace(/^"|"$/g, "") || "SiwCarry",
       email: match[2].trim(),
     };
   }
   return {
-    name: "Thaili",
+    name: "SiwCarry",
     email: from || env("ADMIN_EMAIL") || env("SMTP_USER"),
   };
 }
@@ -62,7 +62,7 @@ async function sendWithBrevo({ to, subject, text, html }) {
 
 async function sendWithResend({ to, subject, text, html }) {
   const apiKey = env("RESEND_API_KEY");
-  const from = env("SMTP_FROM") || env("RESEND_FROM") || "Thaili <onboarding@resend.dev>";
+  const from = env("SMTP_FROM") || env("RESEND_FROM") || "SiwCarry <onboarding@resend.dev>";
 
   console.log(`[email] sending via Resend API to ${to}`);
 
